@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  line-height: 2rem;
+}
+
+.container {
+  padding: 40px 40px;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  color: black;
+  padding: 20px 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #132620;
+  color: #fff;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #132620;
+  padding: 20px 0px;
+  font-size: 20px;
+  /* overflow-x: scroll; */
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin-right: 40px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-bottom {
+  margin-top: 40px;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+.brand-img {
+  width: 50px;
+  height: 50px;
+  border: white solid 2px;
+  border-radius: 20px;
+  display: block;
+  margin-right: auto;
+}
+
+.landing-img {
+  width: 95%;
+  /* border: white solid 2px;
+  border-radius: 20px; */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro-img {
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bot-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #D5AC67;
+  min-height: 500px;
+  border-color: #D5AC67 solid 2px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px -50px;
+  padding: 40px;
+}
+
+.bot-img {
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: beige solid 2px;
+  border-radius: 20px;
+  transition: transform .2s; /* Animation */
+}
+
+.bot-img:hover {
+  margin-left: 20%;
+  margin-right: 20%;
+  transform: scale(1.5);
+}
+
+.design-img{
+  max-width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ol {
+  padding-left: 30px;
+}
+
+
+
+section {
+  scroll-margin-top: 10vh;
+}
+
+
