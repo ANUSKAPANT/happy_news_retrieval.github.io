@@ -62,9 +62,9 @@
               </div>
             <li><b>Personalized Recommender</b>
               <ol type="a">
-                <li>User vector processor</li>
-                <li>Content Vector</li>
-                <li>Re ranker</li>
+                <li><b>User vector processor:</b> For every new user, we initialize the user vector to the mean of the vector of 100 random good tweets. And based on the implicit feedback obtained from user clicks on category and articles we use the following update equation to make the user vector closer to the content or category embeddings. Here, Pu denotes the user vector and Qi denotes the embedding for the content/category that the user clicked on. Both the vectors are normalized to unit magnitudes.</li>
+                <li><b>Content Vector:</b> To represent the content of the news article, we use the data2vec model fine tuned for topic classification on our own dataset.</li>
+                <li><b>Re ranker:</b> We then rerank the happy news articles fetched by the happy news retriever system according to the cosine similarity score of the document embeddings and the user vector. This re-ranking scheme gives greater scores to those articles whose topics are more related to the topics that the user has clicked on before, therefore adding personalization to the news recommended.</li>
               </ol>
             </li> 
             </ul>
@@ -80,6 +80,7 @@
             The evaluation method we used here was user testing. By releasing the Slack bot on the class project channel, we were able to get feedback from users on their click preferences. This feedback helped us to visualize how personalized recommendations were working and identify any areas that needed improvement. Another benefit of using user testing as an evaluation method was that it was a fast and easy way to gather feedback since we already had a project discussion channel set up where we already had a fair amount of activity from everyone. This allowed users to give their feedback in a familiar and convenient environment in a more practical way where they used our project as an end product. 
             During the user testing process, we discovered that some users were only clicking on the category and not clicking on the link to the article. This finding led us to integrate an update of user vectors not only based on the document vector but also on the basis of the category picked. This change helped to improve the accuracy of personalized recommendations.
             Overall, evaluation is an essential process that allows us and will keep doing that in the future too to measure the success of our project, identify areas that need improvement, and make data-driven decisions to improve the effectiveness of our project. By using user testing and other evaluation methods, we were able to make the necessary changes to enhance the performance of our Slack bot and improve user satisfaction.
+            <img src="images/evaluation.gif" />
           </div>
         </div>
       </section>
