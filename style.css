@@ -126,6 +126,37 @@ h2 {
   margin-right: auto;
 }
 
+.eval-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: #D5AC67; */
+  min-height: 500px;
+  /* border-color: #D5AC67 solid 2px; */
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px 0px;
+  padding: 40px;
+}
+
+.eval-img {
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: beige solid 2px;
+  border-radius: 20px;
+  transition: transform .2s; /* Animation */
+}
+
+.eval-img:hover {
+  margin-left: 20%;
+  margin-right: 20%;
+  transform: scale(1.5);
+}
+
+
+
 ol {
   padding-left: 30px;
 }
