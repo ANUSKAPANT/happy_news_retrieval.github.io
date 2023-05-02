@@ -198,6 +198,11 @@ section {
   border-radius: 50%;
 }
 
+.formula-img {
+  width: 50%;
+  margin-left: 20%;
+}
+
 footer {
   background-color: #D5AC67;
 }
