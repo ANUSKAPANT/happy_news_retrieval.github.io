@@ -38,6 +38,7 @@ header nav {
   background-color: #132620;
   padding: 20px 0px;
   font-size: 20px;
+  z-index: 100;
 }
 
 header nav ul {
@@ -64,6 +65,7 @@ header nav ul li a {
 h2 {
   padding-bottom: 30px;
 }
+
 .brand-img {
   width: 50px;
   height: 50px;
@@ -75,15 +77,13 @@ h2 {
 
 .landing-img {
   width: 95%;
-  /* border: white solid 2px;
-  border-radius: 20px; */
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
 .intro-img {
-  max-width: 70%;
+  max-width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -131,9 +131,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* background-color: #D5AC67; */
-  min-height: 500px;
-  /* border-color: #D5AC67 solid 2px; */
+  min-height: 700px;
   border-radius: 20px;
   overflow: hidden;
   margin: 15px 0px;
@@ -141,7 +139,7 @@ h2 {
 }
 
 .eval-img {
-  max-width: 30%;
+  max-width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -153,13 +151,13 @@ h2 {
 .eval-img:hover {
   margin-left: 20%;
   margin-right: 20%;
-  transform: scale(1.5);
+  transform: scale(1.85);
 }
 
 
 label {
   position: absolute;
-  top: 50px;
+  top: 100px;
 }
 
 .left {
